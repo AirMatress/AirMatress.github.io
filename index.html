@@ -6,12 +6,15 @@
     <title>Jack's Projects</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+    rel="stylesheet">
     <style>
         body {
             background-color: #1F2A37;
             color: #D6DEE8;
-            font-family: "Varela Round", sans-serif;
+            font-family: "Nunito Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
             margin: 0;
             padding: 0;
             line-height: 1.6;
@@ -23,8 +26,8 @@
         }
 
         section {
-            margin-top: 20px;
-            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom:5px;
             /*border: 2px solid #549294;
             clip-path: polygon(5px 0%, calc(100% - 5px) 0%, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0% calc(100% - 5px), 0% 5px);
            */
@@ -38,7 +41,7 @@
         }
         .contact {
             text-align: center;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
         .contact a {
             margin: 0 10px;
@@ -56,12 +59,12 @@
             line-height: 1.5;
         }
         h2 {
-            font-size: 1.1em;
+            font-size: 1.3em;
             font-weight: 400;
             margin: 0 0 0 0;
             border-bottom: 1px solid #549294;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
+            margin-bottom: 15px;
+            padding-bottom: 0px;
         }
         ul {
             list-style: none;
@@ -69,13 +72,10 @@
             margin: 0;
         }
         li {
-            margin-bottom: 15px;
-            font-size: .9em;
+            margin-bottom: 10px;
+            font-size: 1em;
         }
-        .year {
-            font-weight: 500;
-            margin-right: 10px;
-        }
+        /* simplified: per-item classes removed — styling handled by generic rules */
         a {
             color: #D6DEE8;
             text-decoration: none;
@@ -129,34 +129,40 @@
         <section id="work">
             <h2>Work</h2>
             <ul>
-                <li><span class="year">2026 ▸</span> <span class="role">Electrical Engineer @ </span> <span class="company"><a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></span></li>
-                <li><span class="year">2024 ▸</span> <span class="role">Assembly Technician @ </span> <span class="company"><a href="https://kepler.space/">Kepler Communications</a></span></li>
-                <li><span class="year">2023 ▸</span> <span class="role">Applications Engineer @ </span><span class="company"><a href="https://www.athleticknit.com/">Athletic Knit</a></span> <> <span class="company"><a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></span></li>
+                <li>2026 ▸ Hardware Design Engineer @ <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
+                <li>2024 ▸ Satellite Hardware Technician @ <a href="https://kepler.space/">Kepler Communications</a></li>
+                <li>2023 ▸ Applications Engineer @ <a href="https://www.athleticknit.com/">Athletic Knit</a> &amp; <a href="https://mosaicmfg.com/">Mosaic Manufacturing</a></li>
             </ul>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
             <ul>
-                <li><span class="year">2025 ▸</span> <span class="company"><a href="https://github.com/Kay-Jack/Leviosa">Leviosa</a></span> ▸ A levitating pen using analog circuits.</li>
-                <li><span class="year">2025 ▸</span> <span class="company"><a href="https://github.com/Kay-Jack/Photon">Photon</a></span> ▸ Custom bike light using Arm M0+.</li>
-                <li><span class="year">2024 ▸</span> <span class="company"><a href="https://github.com/Kay-Jack/ECG-Neural-Network">ECG Neural Network</a></span> ▸ Capstone project using an ESP32.</li>
+                <li>2025 ▸ <a href="https://github.com/Kay-Jack/Leviosa">Leviosa</a> ▸ A levitating pen using analog circuits.</li>
+                <li>2025 ▸ <a href="https://github.com/Kay-Jack/Photon">Photon</a> ▸ Custom bike light using Arm M0+.</li>
+                <li>2023 ▸ <a href="https://github.com/17jwk3/ECG_Li">ECG Neural Network</a> ▸ Capstone project using an ESP32.</li>
+                <li>2023 ▸ <a href="https://github.com/17jwk3/RF-Filter">RF Filter</a> ▸ 5th-order maximally flat stub RF filter (2 GHz cutoff).</li>
+                <li>2020 ▸ 2nd Iteration of Electric Skateboard ▸ 1.4kW Battery = 50km/h </li>
+                <li>2018 ▸ 1st Iteration of Electric Skateboard ▸ 500W Battery = 30km/h </li>
+                <li>2015 ▸ 3D Printer ▸ Built and Wrote Firmware </li>
+
                 <!-- Add more projects as needed -->
             </ul>
         </section>
         <section id="skills">
             <h2>Skills</h2>
             <ul>
-                <li>Hardware ▸ KiCad | Oscilliscope | Logic Analyzer | Onshape | Fusion360  </li>
-                <li>Firmware ▸ Embedded C/C++ | STM32 / TI / Arduino IDEs | I²C · SPI · UART · CAN</li>
-                <li>Software ▸ Python | PyVISA | SciPy | VScode | Linux</li>
+                <li>▸ Software/Tools: KiCad, Ltspice, Altium, Python, PyVisa, SciPy, VScode, Git, Linux</li>
+                <li>▸ Languages and Architecture: VHDL, Python, C/++, STM32, ARM Cortex</li>
+                <li>▸ Lab Instrumentation: Oscilloscope, Logic Analyzer, DMM, Class 3 Soldering</li>
+                <li>▸ Communication Protocols: ETH, SPI, I2C, UART, USB, CAN, RS-485</li>
                 <!-- Add more experiments as needed -->
             </ul>
         </section>
         <section id="experiments">
             <h2>About</h2>
             <ul>
-                <li>Hi! I use this site to record my work and project history. Feel free to connect with me.</li>
+                <li>Hi! I use this site to share a bit about myself and some of the projects I work on. Feel free to connect with me though my socials.</li>
                 <!-- Add more experiments as needed -->
             </ul>
         </section>
